@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first_page {
+  background-color: rgb(223, 140, 39);
+  height: 90vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.first_page::after {
+  background: linear-gradient(-45deg, #ffffff 16px, transparent 0),
+    linear-gradient(45deg, #ffffff 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 32px 32px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 7%;
+  left: 0px;
+  width: 100%;
+  height: 32px;
+}
+.slides {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header1 {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15%;
+}
+span,
+a {
+  padding: 10px;
+}
+button {
+  padding: 5px;
+}
+header div {
+  display: inline;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.header2 {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15%;
+}
+
+.story {
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story img {
+  width: 100vw;
+}
+
+.split_text {
+  padding: 0px 15%;
+  columns: 2;
+}
+
+.special_offer {
+  height: 100vh;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.heading {
+  height: 30%;
+  width: 100%;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.promo1 {
+  height: 50%;
+  width: 120%;
+  margin-left: 30%;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 70%;
+  height: 30%;
+  background-color: white;
+  position: relative;
+  top: -40%;
+  right: -130%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-table {
+  background-color: blue;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+.book-table div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chef-list,
+.news-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chef_parent {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.chef_description,
+.news_description {
+  text-align: center;
+  font-size: small;
+}
+.news {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(93, 185, 121);
+}
+
+.news_parent {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.news_img img {
+  height: 275px;
+  width: 350px;
+}
+.news_details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news-list{
+  padding-top: 80px;
+}
+
+.gallery{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(77, 74, 238);
+}
+
+.footer{
+  width: 100vw;
+  height: 70vh;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+}
+.footer .about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.others{
+  padding: 20px 10%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+/*
+
+
+long arrow up  <i class="fas fa-long-arrow-alt-up"></i>
+*/
