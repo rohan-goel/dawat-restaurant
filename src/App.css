@@ -215,11 +215,44 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
+.menu{
+  width: 100vw;
+  height: 100vh;
 
+}
+.category{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 
+}
+.dishes{
+  width: 100vw;
+  margin: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.dish-container{
+  display: flex;
+}
 
+.category button{
+  margin: 0 5px;
+}
+.pic-container{
+  display: inline;
+}
+.pic{
+  border-radius: 50%;
+  border: 10px solid rgb(214, 207, 207);
+}
 
+.ingredients{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
 
 /*
 

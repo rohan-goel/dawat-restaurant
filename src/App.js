@@ -2,6 +2,7 @@ import "./App.css";
 import ChefCard from './components/ChefCard'
 import NewsCard from './components/NewsCard'
 import Footer from './components/Footer'
+import Menu from './components/Menu'
 function App() {
   return (
     <div className="App">
@@ -81,6 +82,9 @@ function App() {
         </div>
       </div>
 
+      
+      <Menu/>
+      
       <div className="book-table">
         <div>
           <h2>BOOK A TABLE NOW!</h2>
