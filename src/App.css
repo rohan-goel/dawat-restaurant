@@ -129,7 +129,7 @@ a:hover {
 }
 
 .story img {
-  width: 100vw;
+  width: 100%;
   height: 50%;
 }
 
@@ -142,11 +142,14 @@ a:hover {
 
 .special_offer {
   height: 100vh;
-  background-color: cadetblue;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./dawat-images/promo_slide_3.jpg");
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  font-family: "Lato", sans-serif;
 }
+
 .heading {
   height: 30%;
   width: 100%;
@@ -156,6 +159,12 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+.heading h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5em;
+  color: rgb(230, 36, 36);
+}
+
 .promo1 {
   height: 50%;
   width: 120%;
@@ -170,10 +179,28 @@ a:hover {
   position: relative;
   top: -40%;
   right: -130%;
-  padding: 20px 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card h3 {
+  font-weight: 900;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.5em;
+}
+
+.order-now {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid orangered;
+  color: orangered;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: "PT Sans Narrow", sans-serif;
+  position: relative;
+  right: 150px;
+  top: 20px;
 }
 
 .book-table {
