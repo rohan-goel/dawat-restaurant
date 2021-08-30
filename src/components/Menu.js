@@ -1,5 +1,5 @@
 import React from "react";
-import Dish from './Dish'
+import Dish from "./Dish";
 function Menu() {
   return (
     <div className="menu">
@@ -18,12 +18,12 @@ function Menu() {
       </div>
 
       <div className="dishes">
-        <Dish/>
-        <Dish/>
-        <Dish/>
-        <Dish/>
-        <Dish/>
-        <Dish/>
+        <Dish />
+        <Dish />
+        <Dish />
+        <Dish />
+        <Dish />
+        <Dish />
       </div>
     </div>
   );

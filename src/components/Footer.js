@@ -29,7 +29,8 @@ function Footer() {
           <span>Contact</span>
         </div>
         <div className="right">
-        <i class="far fa-copyright"/>2017 Dawat Restaurant All right Reserved
+          <i class="far fa-copyright" />
+          2017 Dawat Restaurant All right Reserved
         </div>
       </div>
     </div>
