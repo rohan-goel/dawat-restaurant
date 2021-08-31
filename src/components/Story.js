@@ -17,6 +17,7 @@ function Story() {
         suscipit, voluptatibus tenetur perspiciatis nihil veritatis ipsa odit
         necessitatibus possimus placeat voluptatum?
       </div>
+      <img src="./dawat-images/about_sign.png" alt="" className="sign_img"/>
       <img src="./dawat-images/story.png" alt="" className="story_img"/>
     </div>
   );
