@@ -215,16 +215,22 @@ a:hover {
   height: 90vh;
   color: #ffffff;
   font-size: 2em;
-  /* font-family: 'Lato', sans-serif; */
+
   font-family: "PT Sans Narrow", sans-serif;
-  /* font-weight: 900; */
+
   height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  letter-spacing: 5px;
 }
 
+.book-table div h5{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.5em;
+
+}
 .book-table button {
   color: #ca3d26;
   padding: 10px 40px;
@@ -261,9 +267,7 @@ a:hover {
 .news_description {
   text-align: center;
   font-size: small;
-  /* font-family: 'PT Sans Narrow', sans-serif; */
   font-family: "Lato", sans-serif;
-  /* font-weight: 900; */
 }
 
 .chef_name {
@@ -273,19 +277,23 @@ a:hover {
 }
 .news {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background-color: rgb(93, 185, 121);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./dawat-images/promo_slide_3.jpg");
+  background-size: cover;
 }
 
 .news_parent {
-  height: 200px;
-  width: 400px;
+  height: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-bottom: 100px;
+  margin: 0px 5px 100px 5px;
+  background-color: #ffffff;
 }
 .news_img img {
   height: 275px;
@@ -295,10 +303,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
+  width: 350px;
+  padding: 5px 30px 30px 30px;
 }
 
 .news-list {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .gallery {
@@ -329,20 +340,20 @@ a:hover {
   justify-content: center;
   flex-direction: column;
 }
-.footer .about img{
+.footer .about img {
   margin-bottom: 40px;
 }
 
-.makered{
-  color:#ca3d26
+.makered {
+  color: #ca3d26;
 }
 .contact_links i {
   margin: 20px 20px;
 }
-.addpdright{
+.addpdright {
   padding-right: 10px;
 }
-.addmgbtm{
+.addmgbtm {
   margin-bottom: 15px;
 }
 

@@ -19,7 +19,7 @@ function News() {
         />
         <NewsCard
           photo="./dawat-images/blog-3.jpg"
-          title="Home to get your home delivery"
+          title="Home to get your home delivery?"
         />
       </div>
     </div>
