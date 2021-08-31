@@ -27,14 +27,14 @@ function Home() {
           <img src="./dawat-images/main_logo.png" alt="" />
         </div>
         <div className="nav_links">
-          <a href="Home">Home</a>
-          <a href="Home">About Us</a>
-          <a href="Home">Offer</a>
-          <a href="Home">Menu</a>
-          <a href="Home">Team</a>
-          <a href="Home">Blog</a>
-          <a href="Home">Gallery</a>
-          <a href="Home">Contact</a>
+          <a href="Home">HOME</a>
+          <a href="Home">ABOUT US</a>
+          <a href="Home">OFFER</a>
+          <a href="Home">MENU</a>
+          <a href="Home">TEAM</a>
+          <a href="Home">BLOG</a>
+          <a href="Home">GALLERY</a>
+          <a href="Home">CONTACT</a>
           <a href="Home">
             <i class="fas fa-search"></i>
           </a>

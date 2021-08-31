@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@100&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&family=PT+Sans+Narrow:wght@700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@
 .first_page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./dawat-images/promo_slide_2.jpg");
+  background-size: cover;
   height: 90vh;
   color: #ffffff;
 }
@@ -49,7 +51,7 @@
   padding: 8px 25px;
   color: #ffffff;
 
-  background-color: rgb(241, 60, 28);
+  background-color: #ca3d26;
 }
 header div {
   display: inline;
@@ -77,6 +79,9 @@ hr {
   width: 60%;
   justify-content: space-around;
 }
+.nav_links a {
+  font-size: 0.75em;
+}
 a,
 a:hover,
 a:visited,
@@ -89,9 +94,8 @@ a:active {
 }
 
 a:hover {
-  border-top: 5px solid red;
+  border-top: 5px solid #ca3d26;
 }
-
 .slides {
   display: flex;
   flex-direction: column;
@@ -124,7 +128,7 @@ a:hover {
 .story h1 {
   font-size: 4em;
   font-family: "Dancing Script", cursive;
-  color: rgb(230, 36, 36);
+  color: #ca3d26;
   padding: 40px 0;
 }
 
@@ -144,6 +148,7 @@ a:hover {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./dawat-images/promo_slide_3.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -162,7 +167,7 @@ a:hover {
 .heading h2 {
   font-family: "Dancing Script", cursive;
   font-size: 3.5em;
-  color: rgb(230, 36, 36);
+  color: #ca3d26;
 }
 
 .promo1 {
@@ -186,7 +191,7 @@ a:hover {
 }
 
 .card h3 {
-  font-weight: 900;
+  /* font-weight: 900; */
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.5em;
 }
@@ -194,8 +199,8 @@ a:hover {
 .order-now {
   padding: 10px;
   font-size: 1em;
-  border: 2px solid orangered;
-  color: orangered;
+  border: 2px solid #ca3d26;
+  color: #ca3d26;
   /* font-family: 'Lato', sans-serif; */
   font-family: "PT Sans Narrow", sans-serif;
   position: relative;
@@ -206,12 +211,13 @@ a:hover {
 .book-table {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./dawat-images/promo_slide_2.jpg");
+  background-size: cover;
   height: 90vh;
   color: #ffffff;
   font-size: 2em;
   /* font-family: 'Lato', sans-serif; */
-font-family: 'PT Sans Narrow', sans-serif;
-font-weight: 900;
+  font-family: "PT Sans Narrow", sans-serif;
+  /* font-weight: 900; */
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -219,12 +225,12 @@ font-weight: 900;
   justify-content: center;
 }
 
-.book-table button{
-  color: rgb(230, 36, 36);
+.book-table button {
+  color: #ca3d26;
   padding: 10px 40px;
   font-size: 0.5em;
   font-weight: 900;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   margin-top: 40px;
 }
 
@@ -256,15 +262,14 @@ font-weight: 900;
   text-align: center;
   font-size: small;
   /* font-family: 'PT Sans Narrow', sans-serif; */
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  /* font-weight: 900; */
 }
 
-.chef_name{
+.chef_name {
   margin: 20px 0;
-font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 900;
-
+  font-family: "PT Sans Narrow", sans-serif;
+  /* font-weight: 900; */
 }
 .news {
   width: 100vw;
@@ -305,13 +310,18 @@ font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./dawat-images/image_2021_08_03T10_44_47_432Z.png");
+  background-size: cover;
+  height: 80vh;
+  color: #ffffff;
   width: 100vw;
-  height: 70vh;
   background-color: cornflowerblue;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  font-family: "Lato", sans-serif;
 }
 .footer .about {
   display: flex;
@@ -319,6 +329,23 @@ font-family: 'PT Sans Narrow', sans-serif;
   justify-content: center;
   flex-direction: column;
 }
+.footer .about img{
+  margin-bottom: 40px;
+}
+
+.makered{
+  color:#ca3d26
+}
+.contact_links i {
+  margin: 20px 20px;
+}
+.addpdright{
+  padding-right: 10px;
+}
+.addmgbtm{
+  margin-bottom: 15px;
+}
+
 .others {
   padding: 20px 10%;
   width: 100vw;
@@ -375,10 +402,10 @@ font-family: 'PT Sans Narrow', sans-serif;
   color: black;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1em;
-  font-weight: 900;
+  /* font-weight: 900; */
 }
 .ingredients .price {
-  color: rgb(230, 36, 36);
+  color: #ca3d26;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1em;
 }
