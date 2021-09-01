@@ -1,6 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
 
 function Home() {
+
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 100){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
   return (
     <div className="first_page" id="home_screen">
       <header className="header1">
@@ -24,9 +36,9 @@ function Home() {
         </div>
       </header>
       <hr />
-      <header className="header2">
+      <header className={colorChange ? 'header2  makefixed' : 'header2'}>
         <div>
-          <img src="./dawat-images/main_logo.png" alt="" />
+          <img src={colorChange ? './dawat-images/main_logo_black.png' : './dawat-images/main_logo.png'} alt="" />
         </div>
         <div className="nav_links">
           <a href="#home_screen">HOME</a>
@@ -42,6 +54,8 @@ function Home() {
           </a>
         </div>
       </header>
+      
+      
       <div className="slides">
         <span>Our Menu</span>
         <span>SEE WHAT'S NEW TODAY</span>

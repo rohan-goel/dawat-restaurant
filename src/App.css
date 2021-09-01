@@ -48,17 +48,6 @@
   width: 100%;
   height: 20px;
 }
-/* .first_page::before {
-  position: absolute;
-  content: "";
-  display: block;
-  background: linear-gradient(45deg, #ffffff 25%, transparent 25%),
-    linear-gradient(-45deg, #ffffff 25%, transparent 25%);
-  background-size: 20px 20px;
-  top: -20px;
-  width: 100%;
-  height: 20px;
-} */
 
 .slides {
   height: 70vh;
@@ -96,13 +85,38 @@ hr {
 }
 
 .header2 {
-  height: 10vh;
+  height: 12vh;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 0 15%;
+  top: 0;
 }
+
+.makefixed{
+  position: fixed;
+  z-index: 20;
+  background-color: #ffffff;
+  color: black;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .header2 img {
-  padding: 10px;
+  margin: 10px;
+}
+
+.makefixed:after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-135deg, #ffffff 25%, transparent 25%);
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  bottom: -20px;
+  left: 0px;
+  width: 100%;
+  height: 20px;
 }
 
 .nav_links {
@@ -221,7 +235,6 @@ a:hover {
   height: 20px;
 }
 
-
 .heading {
   height: 30%;
   width: 100%;
@@ -243,8 +256,6 @@ a:hover {
   margin-left: 30%;
   position: relative;
 }
-
-
 
 .card {
   width: 60%;
@@ -334,11 +345,10 @@ a:hover {
   margin-top: 40px;
 }
 
-.book-table button:hover{
+.book-table button:hover {
   background-color: #ca3d26;
   color: #ffffff;
 }
-
 
 .book-table div {
   display: flex;
@@ -376,11 +386,11 @@ a:hover {
   /* font-weight: 900; */
 }
 
-.chef_img{
+.chef_img {
   display: flex;
 }
 
-.social_media{
+.social_media {
   width: 30px;
   height: 250px;
   display: flex;
@@ -392,14 +402,14 @@ a:hover {
   visibility: hidden;
 }
 
-.chef_img:hover .social_media{
+.chef_img:hover .social_media {
   visibility: visible;
 }
-.chef_img:hover img{
+.chef_img:hover img {
   filter: brightness(70%);
 }
 
-.social_media i:hover{
+.social_media i:hover {
   color: #ca3d26;
 }
 
@@ -553,7 +563,8 @@ a:hover {
   z-index: 10;
 }
 
-.category button:focus, .category button:hover{
+.category button:focus,
+.category button:hover {
   background-color: #ca3d26;
   color: #ffffff;
 }
@@ -561,7 +572,7 @@ a:hover {
 .dishes {
   width: 100vw;
   /* margin-left: 50px; */
-   display: flex;
+  display: flex;
   flex-wrap: wrap;
   margin-left: 100px;
   /* justify-content: center;  */
