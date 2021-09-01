@@ -1,6 +1,6 @@
 import React from "react";
 
-function Dish() {
+function Dish({name,price}) {
   return (
     <div className="dish-container">
       <div className="pic-container">
@@ -8,8 +8,8 @@ function Dish() {
       </div>
       <div className="dish_details">
       <div className="ingredients">
-        <span className="name">Cupcake Recipe</span>
-        <span className="price">$20.00</span>
+          <span className="name">{name}</span>
+          <span className="price">{price}</span>
       </div>
       <div className="contents">
         <span>-Juice Fruit</span>

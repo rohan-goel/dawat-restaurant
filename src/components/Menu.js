@@ -1,6 +1,16 @@
-import React from "react";
+import React,{useState} from "react";
 import Dish from "./Dish";
+import menuDishes from "../menuDshes";
 function Menu() {
+  const [menu, setMenu] = useState(menuDishes);
+  const filterItem = (filter) => {
+    const filteredMenu = menuDishes.filter((element) => {
+      return element.category === filter;
+    })
+
+    setMenu(filteredMenu);
+  }
+
   return (
     <div className="menu" id="menu_screen">
       <div className="heading">
@@ -9,21 +19,19 @@ function Menu() {
       </div>
 
       <div className="category">
-        <button>ALL</button>
-        <button>BREAKFAST</button>
-        <button>LUNCH</button>
-        <button>DINNER</button>
-        <button>COFFEE</button>
-        <button>SNACKS</button>
+        <button onClick={()=>setMenu(menuDishes)}  >ALL</button>
+        <button onClick={()=>filterItem("Breakfast")}>BREAKFAST</button>
+        <button onClick={()=>filterItem("Lunch")}>LUNCH</button>
+        <button onClick={()=>filterItem("Dinner")}>DINNER</button>
+        <button onClick={()=>filterItem("Coffee")}>COFFEE</button>
+        <button onClick={()=>filterItem("Snacks")}>SNACKS</button>
       </div>
 
       <div className="dishes">
-        <Dish />
-        <Dish />
-        <Dish />
-        <Dish />
-        <Dish />
-        <Dish />
+       
+        {menu.map((element) => {
+          return <Dish name={element.name} price={ element.price}/>
+       })}
       </div>
     </div>
   );
