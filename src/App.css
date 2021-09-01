@@ -14,6 +14,7 @@
   animation: slide 10s infinite;
   height: 90vh;
   color: #ffffff;
+  position: relative;
 }
 @keyframes slide {
   25% {
@@ -35,45 +36,29 @@
   }
 }
 
-/* .first_page::after {
-  background: linear-gradient(-45deg, #ffffff 16px, transparent 0),
-    linear-gradient(45deg, #ffffff 16px, transparent 0);
-  background-position: left-bottom;
-  background-repeat: repeat-x;
-  background-size: 32px 32px;
-  content: " ";
-  display: block;
+.first_page::after {
   position: absolute;
-  bottom: 7%;
-  left: 0px;
-  width: 100%;
-  height: 32px;
-} */
-.first_page:after {
   content: "";
-  position: absolute;
+  display: block;
+  background: linear-gradient(135deg, #333 25%, transparent 25%),
+    linear-gradient(-135deg, #333 25%, transparent 25%);
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  bottom: -20px;
   width: 100%;
-  height: 10px;
-  background: linear-gradient(
-      45deg,
-      transparent 33.333%,
-      #333 33.333%,
-      #333 66.667%,
-      transparent 66.667%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 33.333%,
-      #333 33.333%,
-      #333 66.667%,
-      transparent 66.667%
-    );
-  background-size: 20px 40px;
+  height: 20px;
 }
-.first_page:after {
-  bottom: 45px;
-  transform: rotate(180deg);
-}
+/* .first_page::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(45deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-45deg, #ffffff 25%, transparent 25%);
+  background-size: 20px 20px;
+  top: -20px;
+  width: 100%;
+  height: 20px;
+} */
 
 .slides {
   height: 70vh;
@@ -203,42 +188,39 @@ a:hover {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./dawat-images/promo_slide_2.jpg");
-  animation: slide 10s infinite;
+  /* animation: slide 10s infinite; */
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 
-.special_offer::before .first_page::after {
-  content: "";
+.special_offer::after {
   position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #333 25%, transparent 25%),
+    linear-gradient(-135deg, #333 25%, transparent 25%);
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  bottom: -20px;
   width: 100%;
-  height: 10px;
-  background: linear-gradient(
-      45deg,
-      transparent 33.333%,
-      #333 33.333%,
-      #333 66.667%,
-      transparent 66.667%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 33.333%,
-      #333 33.333%,
-      #333 66.667%,
-      transparent 66.667%
-    );
-  background-size: 20px 40px;
+  height: 20px;
 }
 .special_offer::before {
-  top: -10px;
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-135deg, #ffffff 25%, transparent 25%);
+  background-size: 20px 20px;
+  top: 0px;
+  width: 100%;
+  height: 20px;
 }
-.first_page::after {
-  bottom: 45px;
-  transform: rotate(180deg);
-}
+
 
 .heading {
   height: 30%;
@@ -256,19 +238,21 @@ a:hover {
 }
 
 .promo1 {
-  height: 50%;
-  width: 120%;
+  width: 800px;
+  height: 450px;
   margin-left: 30%;
   position: relative;
 }
 
+
+
 .card {
-  width: 70%;
-  height: 30%;
+  width: 480px;
+  height: 280px;
   background-color: white;
   position: relative;
-  top: -40%;
-  right: -130%;
+  top: -50%;
+  right: -115%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -309,6 +293,31 @@ a:hover {
   align-items: center;
   justify-content: center;
   letter-spacing: 5px;
+  position: relative;
+}
+
+.book-table::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #333 25%, transparent 25%),
+    linear-gradient(-135deg, #333 25%, transparent 25%);
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+}
+.book-table::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-135deg, #ffffff 25%, transparent 25%);
+  background-size: 20px 20px;
+  top: 0px;
+  width: 100%;
+  height: 20px;
 }
 
 .book-table div h5 {
@@ -317,12 +326,19 @@ a:hover {
 }
 .book-table button {
   color: #ca3d26;
+  border: solid 1px black;
   padding: 10px 40px;
   font-size: 0.5em;
   font-weight: 900;
   font-family: "PT Sans Narrow", sans-serif;
   margin-top: 40px;
 }
+
+.book-table button:hover{
+  background-color: #ca3d26;
+  color: #ffffff;
+}
+
 
 .book-table div {
   display: flex;
@@ -359,6 +375,34 @@ a:hover {
   font-family: "PT Sans Narrow", sans-serif;
   /* font-weight: 900; */
 }
+
+.chef_img{
+  display: flex;
+}
+
+.social_media{
+  width: 30px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+  right: 30px;
+  visibility: hidden;
+}
+
+.chef_img:hover .social_media{
+  visibility: visible;
+}
+.chef_img:hover img{
+  filter: brightness(70%);
+}
+
+.social_media i:hover{
+  color: #ca3d26;
+}
+
 .news {
   width: 100vw;
   height: 120vh;
@@ -366,6 +410,31 @@ a:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./dawat-images/promo_slide_3.jpg");
   background-size: cover;
+  position: relative;
+}
+
+.news::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #333 25%, transparent 25%),
+    linear-gradient(-135deg, #333 25%, transparent 25%);
+  background-repeat: repeat-x;
+  background-size: 20px 20px;
+  bottom: -20px;
+  width: 100%;
+  height: 20px;
+}
+.news::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-135deg, #ffffff 25%, transparent 25%);
+  background-size: 20px 20px;
+  top: 0px;
+  width: 100%;
+  height: 20px;
 }
 
 .news_parent {
@@ -417,7 +486,21 @@ a:hover {
   justify-content: space-around;
   flex-direction: column;
   font-family: "Lato", sans-serif;
+  position: relative;
 }
+
+.footer::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: linear-gradient(135deg, #ffffff 25%, transparent 25%),
+    linear-gradient(-135deg, #ffffff 25%, transparent 25%);
+  background-size: 20px 20px;
+  top: 0px;
+  width: 100%;
+  height: 20px;
+}
+
 .footer .about {
   display: flex;
   align-items: center;
@@ -450,7 +533,7 @@ a:hover {
 }
 .menu {
   width: 100vw;
-  height: 120vh;
+  /* height: 120vh; */
 }
 .category {
   width: 100vw;
@@ -461,18 +544,25 @@ a:hover {
   background-color: white;
   color: rgb(39, 25, 25);
   font-size: 1em;
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 0 5px;
   font-family: "PT Sans Narrow", sans-serif;
   padding: 4px 8px;
   margin-bottom: 30px;
 }
+
+.category button:focus, .category button:hover{
+  background-color: #ca3d26;
+  color: #ffffff;
+}
+
 .dishes {
   width: 100vw;
   /* margin-left: 50px; */
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin-left: 100px;
+  /* justify-content: center;  */
 }
 
 .dish-container {
@@ -529,42 +619,7 @@ font-family: 'Lato', sans-serif;
 font-family: 'PT Sans Narrow', sans-serif;
 
 long arrow up  <i class="fas fa-long-arrow-alt-up"></i>
+<i class="fab fa-instagram"></i>
+<i class="fas fa-basketball-ball"></i>
 
-
-.zigzag {
-    background-color: #333;
-    width: 200px;
-    height: 200px;
-}
-
-.zigzag:before, .first_page:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(
-        45deg,
-        transparent 33.333%,
-        #333 33.333%,
-        #333 66.667%,
-        transparent 66.667%
-    ),
-    linear-gradient(
-        -45deg,
-        transparent 33.333%,
-        #333 33.333%,
-        #333 66.667%,
-        transparent 66.667%
-    );
-    background-size: 20px 40px;
-}
-
-.zigzag:before {
-    top: -10px;
-}
-
-.zigzag:after {
-    bottom: 45px;
-    transform: rotate(180deg);
-}
 */

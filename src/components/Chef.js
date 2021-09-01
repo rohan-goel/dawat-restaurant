@@ -3,7 +3,7 @@ import ChefCard from "./ChefCard";
 
 function Chef() {
   return (
-    <div className="chefs">
+    <div className="chefs" id="chef_screen">
       <div className="heading">
         <h2>Our Chefs</h2>
         <img src="./dawat-images/red.png" alt="" />

@@ -2,7 +2,7 @@ import React from "react";
 
 function Story() {
   return (
-    <div className="story">
+    <div className="story" id="story_screen">
       <h1>Our Story</h1>
       <div className="split_text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam

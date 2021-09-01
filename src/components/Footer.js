@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="footer_screen">
       <div className="about">
         <img src="./dawat-images/main_logo.png" alt="" />
         <p className="addmgbtm">

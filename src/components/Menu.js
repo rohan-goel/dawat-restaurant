@@ -2,7 +2,7 @@ import React from "react";
 import Dish from "./Dish";
 function Menu() {
   return (
-    <div className="menu">
+    <div className="menu" id="menu_screen">
       <div className="heading">
         <h2>Today's Menu</h2>
         <img src="./dawat-images/red.png" alt="" />

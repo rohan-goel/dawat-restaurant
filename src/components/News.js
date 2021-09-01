@@ -3,7 +3,7 @@ import NewsCard from "./NewsCard";
 
 function News() {
   return (
-    <div className="news">
+    <div className="news" id="news_screen">
       <div className="heading">
         <h2>Latest News</h2>
         <img src="./dawat-images/red.png" alt="" />

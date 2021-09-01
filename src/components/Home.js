@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="first_page">
+    <div className="first_page" id="home_screen">
       <header className="header1">
         <div>
           <span>
@@ -16,6 +16,8 @@ function Home() {
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-behance"></i>
+          <i class="fas fa-basketball-ball"></i>
+
           <i class="fas fa-wifi fa-rotate-45"></i>
 
           <button>BOOK A TICKET</button>
@@ -27,14 +29,14 @@ function Home() {
           <img src="./dawat-images/main_logo.png" alt="" />
         </div>
         <div className="nav_links">
-          <a href="Home">HOME</a>
-          <a href="Home">ABOUT US</a>
-          <a href="Home">OFFER</a>
-          <a href="Home">MENU</a>
-          <a href="Home">TEAM</a>
-          <a href="Home">BLOG</a>
-          <a href="Home">GALLERY</a>
-          <a href="Home">CONTACT</a>
+          <a href="#home_screen">HOME</a>
+          <a href="#story_screen">ABOUT US</a>
+          <a href="#special_offer_screen">OFFER</a>
+          <a href="#menu_screen">MENU</a>
+          <a href="#chef_screen">TEAM</a>
+          <a href="#news_screen">BLOG</a>
+          <a href="#gallery_screen">GALLERY</a>
+          <a href="#footer_screen">CONTACT</a>
           <a href="Home">
             <i class="fas fa-search"></i>
           </a>

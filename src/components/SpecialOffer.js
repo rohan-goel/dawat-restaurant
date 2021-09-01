@@ -2,7 +2,7 @@ import React from "react";
 
 function SpecialOffer() {
   return (
-    <div className="special_offer">
+    <div className="special_offer" id="special_offer_screen">
       <div className="heading">
         <h2>Special Package</h2>
         <img src="./dawat-images/red.png" alt="" />
